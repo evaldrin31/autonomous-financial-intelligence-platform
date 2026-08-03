@@ -99,6 +99,23 @@ autonomous-financial-intelligence-platform/
 
 ---
 
+## Engineering Operating System (EOS)
+
+The EOS governs all development:
+
+| Section | Purpose |
+|---------|---------|
+| [company/](./company/) | Engineering governance |
+| [prompts/](./prompts/) | OpenCode instructions |
+| [roles/](./roles/) | Team definitions |
+| [standards/](./standards/) | Coding standards |
+| [playbooks/](./playbooks/) | How-to guides |
+| [templates/](./templates/) | Reusable formats |
+
+**Start Here**: [company/Engineering_Handbook.md](./company/Engineering_Handbook.md)
+
+---
+
 ## Documentation Index
 
 ### Getting Started
@@ -145,17 +162,27 @@ autonomous-financial-intelligence-platform/
 
 ## Development Workflow
 
+### Standard Workflow
+
 ```
 1. Read relevant architecture docs
 2. Review PROJECT_STATE.md
 3. Pick task from current milestone
-4. Follow Git workflow (15_Git_Workflow.md)
-5. Follow Coding standards (19_Coding_Standards.md)
-6. Write tests (20_Testing_Strategy.md)
+4. Follow Git workflow (company/Git_Workflow.md)
+5. Follow Coding standards (standards/)
+6. Write tests (standards/Testing_Standards.md)
 7. Update CHANGELOG.md
 8. Create PR
 9. Merge after review
 ```
+
+### Using OpenCode
+
+1. Read [MASTER_INSTRUCTIONS](./prompts/MASTER_INSTRUCTIONS.md)
+2. Select protocol from [prompts/](./prompts/)
+3. Follow protocol steps
+4. Verify with [standards/](./standards/)
+5. Complete [Definition of Done](./company/Definition_of_Done.md)
 
 ---
 
@@ -202,6 +229,15 @@ autonomous-financial-intelligence-platform/
 ---
 
 ## Quick Start
+
+### For Engineers
+
+1. Read [Engineering Handbook](./company/Engineering_Handbook.md)
+2. Review your [role definition](./roles/)
+3. Check [Definition of Done](./company/Definition_of_Done.md)
+4. Follow [Sprint Workflow](./company/Sprint_Workflow.md)
+
+### Setup
 
 ```bash
 # Clone
