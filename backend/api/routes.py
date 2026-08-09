@@ -1,11 +1,8 @@
-"""
-API routes module.
-"""
-
 from fastapi import APIRouter
+from backend.api import health
+from backend.api import auth
 
-from . import health
+router = APIRouter(prefix="/api/v1")
 
-api_router = APIRouter(prefix="/api/v1")
-
-api_router.include_router(health.router, prefix="/health", tags=["health"])
+router.include_router(health.router)
+router.include_router(auth.router)
