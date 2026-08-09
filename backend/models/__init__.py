@@ -1,3 +1,41 @@
-"""
-SQLAlchemy models.
-"""
+from backend.database.base import Base
+from backend.models.models import (
+    User,
+    Portfolio,
+    PortfolioHolding,
+    Asset,
+    MarketData,
+    FundamentalData,
+    MacroIndicator,
+    NewsEvent,
+    FinancialDocument,
+    DocumentChunk,
+    InvestmentThesis,
+    AgentOpinion,
+    Decision,
+    Order,
+    Trade,
+    DataSourceHealth,
+    AuditEvent,
+)
+
+__all__ = [
+    "Base",
+    "User",
+    "Portfolio",
+    "PortfolioHolding",
+    "Asset",
+    "MarketData",
+    "FundamentalData",
+    "MacroIndicator",
+    "NewsEvent",
+    "FinancialDocument",
+    "DocumentChunk",
+    "InvestmentThesis",
+    "AgentOpinion",
+    "Decision",
+    "Order",
+    "Trade",
+    "DataSourceHealth",
+    "AuditEvent",
+]
