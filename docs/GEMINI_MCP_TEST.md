@@ -1,1 +1,0 @@
-Gemini Spark GitHub MCP write-access test.
